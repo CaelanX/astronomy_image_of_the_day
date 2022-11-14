@@ -29,8 +29,13 @@ jobs:
     - run: npm install
     - run: npm ci
     - run: npm run build --if-present
-    - name: Deploy react app to github pages
-      uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
-      with:
-          REACT_APP_API_KEY: ${{secrets.API_KEY}}
+      env:
+        REACT_APP_API_KEY: ${{secrets.API_KEY}}
+    - run : git config user.name github-actions
+    - run : git config user.email github-actions@github.com
+    - run : git --work-tree build add --all
+    - run : git commit -m "Automatic Deploy action run by github-actions"
+    - run : git push origin HEAD:gh-pages --force
+      
+
         
