@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/astronomy_image_of_the_day/static/css/main.ecb05a7f.css",
+    "main.js": "/astronomy_image_of_the_day/static/js/main.8ad0e9dd.js",
+    "index.html": "/astronomy_image_of_the_day/index.html",
+    "main.ecb05a7f.css.map": "/astronomy_image_of_the_day/static/css/main.ecb05a7f.css.map",
+    "main.8ad0e9dd.js.map": "/astronomy_image_of_the_day/static/js/main.8ad0e9dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecb05a7f.css",
+    "static/js/main.8ad0e9dd.js"
+  ]
+}
